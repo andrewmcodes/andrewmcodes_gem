@@ -2,11 +2,9 @@
 
 require 'artii'
 require 'lolcat'
-require './info.md'
 module Namecard
   class Output
-    include Center
-
+    # delegate :centered_message, to: :center
     def log_to_console
       if terminal_width >= 83
         ascii('andrewmcodes')
@@ -28,7 +26,9 @@ module Namecard
     end
 
     def log_info
-      content = File.readlines './info.md'
+      templates_root = File.expand_path(File.join("..", "."), File.dirname(__FILE__))
+      p templates_root
+      content = File.readlines "#{templates_root}/info.md"
 
       File.open("./temp.md", "w") do |file|
         content.each do |line|
@@ -45,7 +45,8 @@ module Namecard
     end
 
     def centered_message(message)
-      Center.new(message, terminal_width).centered_content
+      content = Center.new(message, terminal_width)
+      content.centered_content
     end
   end
 end

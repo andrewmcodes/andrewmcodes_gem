@@ -5,5 +5,5 @@ require "namecard/output"
 module Namecard
   class Error < StandardError; end
 
-  Namecard.output
+  Output.log_to_console
 end

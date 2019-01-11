@@ -13,4 +13,4 @@ if ["-v", "--version"].include? ARGV[0]
   exit 0
 end
 
-Namecard::Output.start
+Namecard.log_to_console
