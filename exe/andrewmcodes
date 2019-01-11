@@ -6,11 +6,9 @@ require "pathname"
 source_path = (Pathname.new(__FILE__).dirname + "../lib").expand_path
 $LOAD_PATH << source_path
 
-require "namecard"
+require "andrewmcodes"
 
 if ["-v", "--version"].include? ARGV[0]
   puts New::VERSION
   exit 0
 end
-
-Namecard.log_to_console

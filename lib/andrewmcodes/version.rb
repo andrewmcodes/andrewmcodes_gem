@@ -1,3 +1,3 @@
-module Namecard
+module Andrewmcodes
   VERSION = "0.1.0"
 end

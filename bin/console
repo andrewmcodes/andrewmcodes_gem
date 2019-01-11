@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "namecard"
+require "andrewmcodes"
 require "pry"
 Pry.start

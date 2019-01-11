@@ -1,17 +1,26 @@
 # frozen_string_literal: true
 
-module Namecard
+module Andrewmcodes
   class Center
     attr_accessor :output, :columns
 
-    def initialize(output, columns)
+    def initialize(output:, columns:)
       @output = output
-      @columns = output
+      @columns = columns
     end
 
     def centering_spaces
-      output_length = output.strip.length.to_i
-      spaces_needed = ( (columns - output_length) / 2 ) - 1
+      if output.is_a? String
+        spaces(output.strip.length.to_i)
+      elsif output.is_a? Integer
+        spaces(output)
+      else
+        p "ERROR"
+      end
+    end
+
+    def spaces(length)
+      spaces_needed = ( (columns - length) / 2 ) - 1
       spaces_string = Array.new(spaces_needed, " ").join("")
       spaces_string
     end
