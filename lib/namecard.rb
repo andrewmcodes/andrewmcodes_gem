@@ -1,6 +1,9 @@
 require "namecard/version"
+require "namecard/center"
+require "namecard/output"
 
 module Namecard
   class Error < StandardError; end
-  # Your code goes here...
+
+  Namecard.output
 end
