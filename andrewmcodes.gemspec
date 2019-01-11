@@ -5,7 +5,7 @@ require "andrewmcodes/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "andrewmcodes"
-  spec.version       = andrewmcodes::VERSION
+  spec.version       = Andrewmcodes::VERSION
   spec.authors       = ["Andrew Mason"]
   spec.email         = ["masonam96@outlook.com"]
 
