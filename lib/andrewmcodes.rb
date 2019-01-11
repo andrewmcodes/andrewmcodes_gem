@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "andrewmcodes/version"
 require "andrewmcodes/center"
 require "andrewmcodes/output"

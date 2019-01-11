@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'artii'
-require 'lolcat'
-require 'logger'
-require 'fileutils'
+require "artii"
+require "lolcat"
+require "logger"
+require "fileutils"
 module Andrewmcodes
   class Output
     # delegate :centered_message, to: :center
@@ -27,7 +27,7 @@ module Andrewmcodes
     end
 
     def ascii(a_string)
-      a = Artii::Base.new :font => 'slant'
+      a = Artii::Base.new font: "slant"
       out = a.asciify(a_string)
       system("echo '#{out}' | lolcat")
     end
@@ -36,7 +36,7 @@ module Andrewmcodes
       templates_root = File.expand_path(File.join(".", "."), File.dirname(__FILE__))
       content = File.readlines "#{templates_root}/info.md"
 
-      File.open("./../../temp.md", "w") do |file|
+      File.open("./../../temp.md", "w") do |_file|
         content.each do |line|
           system("echo '#{centered_message(line)}' | lolcat")
         end

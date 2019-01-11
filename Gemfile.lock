@@ -29,6 +29,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rainbow (3.0.0)
+    rake (12.3.2)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -60,6 +61,7 @@ DEPENDENCIES
   andrewmcodes!
   bundler (~> 1.17)
   pry
+  rake
   rspec (~> 3.2)
   rubocop (~> 0.61.0)
 

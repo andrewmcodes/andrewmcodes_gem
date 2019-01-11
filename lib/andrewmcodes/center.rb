@@ -20,7 +20,7 @@ module Andrewmcodes
     end
 
     def spaces(length)
-      spaces_needed = ( (columns - length) / 2 ) - 1
+      spaces_needed = ((columns - length) / 2) - 1
       spaces_string = Array.new(spaces_needed, " ").join("")
       spaces_string
     end
