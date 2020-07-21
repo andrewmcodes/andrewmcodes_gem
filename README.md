@@ -1,5 +1,3 @@
-# :warning: WIP :warning:
-
 ![Imgur](https://i.imgur.com/mbMCBfT.png)
 
 # andrewmcodes card
