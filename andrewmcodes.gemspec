@@ -1,31 +1,39 @@
+# frozen_string_literal: true
 
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "andrewmcodes/version"
+require_relative "lib/andrewmcodes/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "andrewmcodes"
-  spec.version       = Andrewmcodes::VERSION
-  spec.authors       = ["Andrew Mason"]
-  spec.email         = ["masonam96@outlook.com"]
+  spec.name = "andrewmcodes"
+  spec.version = Andrewmcodes::VERSION
+  spec.authors = ["Andrew Mason"]
+  spec.email = ["support@andrewm.codes"]
 
-  spec.summary       = "Create your ruby andrewmcodes"
-  spec.description   = "Generates a gem for your andrewmcodes"
-  spec.homepage      = "https://github.com/andrewmcodes/andrewmcodes"
-  spec.license       = "MIT"
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.summary = "gem exec andrewmcodes"
+  spec.description = "Andrew Mason's business card, the Ruby Way."
+  spec.homepage = "https://github.com/andrewmcodes/andrewmcodes_gem"
+  spec.license = "MIT"
+  spec.required_ruby_version = ">= 2.6.0"
+
+  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
+
+  # Specify which files should be added to the gem when it is released.
+  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  spec.files = Dir.chdir(__dir__) do
+    `git ls-files -z`.split("\x0").reject do |f|
+      (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor])
+    end
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec", "~> 3.2"
-  spec.add_development_dependency "rubocop", "~> 0.74.0"
+  # Uncomment to register a new dependency of your gem
+  # spec.add_dependency "example-gem", "~> 1.0"
 
-  spec.add_dependency "artii"
-  spec.add_dependency "lolcat"
+  # For more information and examples about making a new gem, check out our
+  # guide at: https://bundler.io/guides/creating_gem.html
 end
