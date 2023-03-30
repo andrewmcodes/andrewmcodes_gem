@@ -1,24 +1,36 @@
-# Andrewmcodes
+![andrewmcodes gem output](https://user-images.githubusercontent.com/18423853/228712718-769d6071-e06c-4d95-97a0-6e98089a0f56.png)
 
-TODO: Delete this and the text below, and describe your gem
+# `andrewmcodes` Business Card
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/andrewmcodes`. To experiment with that code, run `bin/console` for an interactive prompt.
+One of the first gems I ever released now updated for 2023. Whether I get fancy or stay simple, it's only job is to echo my info into the terminal.
+
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
+[![Gem Version](https://badge.fury.io/rb/standard.svg)](https://rubygems.org/gems/standard)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+Nothing fancy, which is one of my goals with picking this project back up. **No perfectionism here! ✨**
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+There is 0 reason to install this anywhere but your local machine, and even that now is unecessary! 🎉
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+Now that [rubygems/rubygems#6309](https://github.com/rubygems/rubygems/pull/6309) has merged, you no longer have to install this gem to use it. Similarly to `npx`, you can run `gem exec andrewmcodes` and hopefully it will work. 🤞
 
 ## Usage
 
-TODO: Write usage instructions here
+Recommended usage is to run the following command:
+
+```shell
+gem exec andrewmcodes
+```
+
+On older versions of RubyGems, you can run the following command:
+
+```shell
+gem install andrewmcodes
+andrewmcodes
+```
 
 ## Development
 
@@ -26,9 +38,13 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+I have automated releases set up with GitHub Actions, so I skip the `rake release` steps. To set up your own automated release workflow, check out [this tutorial I wrote on how I do it!](https://andrewm.codes/blog/automating-ruby-gem-releases-with-github-actions/)
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/andrewmcodes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/andrewmcodes/blob/main/CODE_OF_CONDUCT.md).
+Contributions are always welcome, but this is my personal playground so I may want to solve the issue my own way or not at all. If anything, I'd encourage you to fork this and build your own!
+
+Bug reports and pull requests are accepted on GitHub at https://github.com/andrewmcodes/andrewmcodes_gem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/andrewmcodes/andrewmcodes_gem/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -36,4 +52,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Andrewmcodes project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/andrewmcodes/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in my project's codebases, issue trackers, chat rooms and mailing lists are expected to follow the [code of conduct](https://github.com/andrewmcodes/andrewmcodes_gem/blob/main/CODE_OF_CONDUCT.md).
