@@ -1,0 +1,13 @@
+# TypeProf 0.21.7
+
+# Classes
+module Andrewmcodes
+  VERSION: String
+
+  class Card
+    def self.call: -> String
+  end
+
+  class Error < StandardError
+  end
+end

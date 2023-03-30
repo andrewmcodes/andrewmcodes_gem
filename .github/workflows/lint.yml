@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: andrewmcodes/actions/setup-ruby@main
+      - name: 🔍 Standard
+        uses: andrewmcodes/actions/standard@main
+      - name: 📦 Steep
+        run: bin/steep check

@@ -3,7 +3,7 @@
 
 require "bundler/setup"
 require "andrewmcodes"
-
+require "tty-markdown"
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 
@@ -11,5 +11,9 @@ require "andrewmcodes"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start(__FILE__)
+# require "irb"
+# IRB.start(__FILE__)
+
+file_path = File.join(__dir__, "../assets/card.md")
+parsed = TTY::Markdown.parse_file(file_path)
+File.write(File.join(__dir__, "../assets/output"), parsed)
