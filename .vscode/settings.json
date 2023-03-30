@@ -1,0 +1,12 @@
+{
+  "[ruby]": {
+    "editor.defaultFormatter": "testdouble.vscode-standard-ruby",
+    "editor.formatOnSave": true
+  },
+  "ruby.useLanguageServer": false,
+  "ruby.lint": {
+    "rubocop": false,
+    "standard": false
+  },
+  "ruby.format": false
+}

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "fengyinchao.vscode-plugin-fed-tools",
+    "testdouble.vscode-standard-ruby",
+    "soutaro.steep-vscode",
+    "rebornix.ruby",
+    "shopify.ruby-lsp",
+    "soutaro.rbs-syntax"
+  ]
+}
