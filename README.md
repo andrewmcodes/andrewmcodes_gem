@@ -4,10 +4,15 @@
 
 One of the first gems I ever released now updated for 2023. Whether I get fancy or stay simple, it's only job is to echo my info into the terminal.
 
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
-[![Gem Version](https://badge.fury.io/rb/standard.svg)](https://rubygems.org/gems/standard)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Gem Version](https://badge.fury.io/rb/standard.svg)](https://rubygems.org/gems/standard)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+[![CI](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/lint.yml/badge.svg)](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/lint.yml)
+[![Ruby](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/test.yml/badge.svg)](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/test.yml)
+[![Publish](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/publish.yml/badge.svg)](https://github.com/andrewmcodes/andrewmcodes_gem/actions/workflows/publish.yml)
 
 Nothing fancy, which is one of my goals with picking this project back up. **No perfectionism here! ✨**
 
