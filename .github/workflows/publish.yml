@@ -9,15 +9,13 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: ruby
-          package-name: andrewmcodes
-          bump-minor-pre-major: true
-          version-file: "lib/andrewmcodes/version.rb"
-      - uses: actions/checkout@v3
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - uses: actions/checkout@v6
         if: ${{ steps.release.outputs.release_created }}
       - uses: andrewmcodes/actions/setup-ruby@main
         if: ${{ steps.release.outputs.release_created }}

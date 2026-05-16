@@ -1,0 +1,10 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "package-name": "andrewmcodes",
+      "version-file": "lib/andrewmcodes/version.rb",
+      "bump-minor-pre-major": true
+    }
+  }
+}
